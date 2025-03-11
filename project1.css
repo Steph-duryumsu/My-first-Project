@@ -1,0 +1,42 @@
+body{
+  background-color: black;
+}
+
+.container{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100dvh;
+}
+
+.image1{
+height: 20rem;
+width: 21rem;
+}
+
+p{
+  font-size: 18px;
+  font-family: arial; 
+}
+
+.para1{
+font-size: 30px;
+}
+
+
+.para{
+background-color: red;
+padding: 8px;
+height: 19rem;
+width: 20rem;
+}
+
+.button1{
+  background-color: black;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
+ padding: 5px 10px;
+}

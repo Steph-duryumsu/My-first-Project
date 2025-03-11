@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" href="project1.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="image">
+      <img src="images/image 1.jpg" alt="" class="image1">
+    </div>
+
+    <div class="para">
+      <p class="para1">
+        <b><span id="name">CHINAZA</span></b> 
+      </p>
+      
+      <p>
+        <b>AGE:</b> <span id="age">35</span>
+      </p>
+      
+      <p>
+        <b>Hobbies:</b> <span id="hobbies">singing and reading</span>
+      </p>
+      
+      <p>
+        <b>Favourite Food:</b> <span id="food">Rice</span>
+      </p>
+     
+      <p>
+       <b>Favourite Movie:</b> <span id="movie">Dune</span>
+      </p>
+
+      <button class="button1" id="button" onclick="updateProfile()">
+        GET YOURS
+      </button>
+    </div>
+  </div>
+
+  <script>
+    function updateProfile(){
+      let userName = prompt("what is your name?");
+      let userAge = prompt("What is your age?");
+      let userHobbies = prompt("What are your hobbies?");
+      let userFood = prompt("what is your favourite food?");
+      let userMovie = prompt("What is your favourite movie?");
+
+      if(userName && userAge && userHobbies && userFood && userMovie){
+        document.getElementById("name").innerHTML = userName;
+        document.getElementById("age").innerHTML = userAge;
+        document.getElementById("hobbies").innerHTML = userHobbies;
+        document.getElementById("food").innerHTML = userFood;
+        document.getElementById("movie").innerHTML = userMovie;
+
+        alert(`Your name is ${username}. You are ${userAge} years old. your hobbies are ${userHobbies}. your favourite food is ${userFood}. your favourite movie is ${userMovie} `);
+      }
+      else{
+        alert("please fill in all details");
+      }
+
+      
+      if (name = "ope"){
+        alert("Welcome ope");
+      }else{
+        alert("Hi ope");
+      }
+    }
+  </script>
+</body>
+</html>

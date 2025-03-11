@@ -1,0 +1,37 @@
+* {
+box-sizing:border-box;
+}
+
+body{
+ display: flex;
+}
+
+.container{
+  display: flex;
+}
+
+.img-container{
+ 
+}
+
+.para-container {
+  
+}
+p{
+  font-size: 18px;
+  font-family: arial;  
+}
+
+.para1{
+  font-size: 32px;
+  font-family: arial;
+  font-weight: bold;
+}
+
+.button1{
+  background-color: rgb(52, 166, 211);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  
+}
