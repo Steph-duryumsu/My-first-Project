@@ -9,9 +9,10 @@ form.addEventListener("submit", function (event) {
   let birthdate = document.getElementById("date-input");
   let password = document.getElementById("passWord-input");
   let email = document.getElementById("email-Input");
+  let fullname = `${firstname.value} ${lastname.value}`;
 
-  let title = document.querySelector("h1");
-  title.innerText = `Welcome ${firstname.value} ${lastname.value}`;
+   let h1 = document.querySelector("h1");
+   h1.innerHTML = `Welcome ${fullname}`;
 
 
   let content = document.querySelector("#form-container");
@@ -23,7 +24,24 @@ form.addEventListener("submit", function (event) {
   newButton1.textContent = 'Yes';
   document.body.appendChild(newButton1);
 
+  newButton1.onclick = function(event){
+    event.preventDefault();
+    document.body.innerHTML = `<h1>Welcome ${fullname} you have been registered successfully. </h1>`
+  };
+
+  newButton1.style.backgroundColor = "black";
+  newButton1.style.padding = "5px 10px";
+
+
   const newButton2 = document.createElement('button');
   newButton2.textContent = 'No';
   document.body.appendChild(newButton2);
+
+  newButton2.onclick = function(event){
+    event.preventDefault();
+    location.reload();
+  }
+  newButton2.style.backgroundColor = "black";
+  newButton2.style.padding = "5px 10px";
+
 });
