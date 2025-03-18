@@ -7,15 +7,15 @@ form.addEventListener("submit", function (event) {
   let firstname = document.getElementById("name-input");
   let lastname = document.getElementById("last-input");
   let birthdate = document.getElementById("date-input");
-  let password = document.getElementById("password-input");
-  let email = document.getElementById("email-input");
+  let password = document.getElementById("passWord-input");
+  let email = document.getElementById("email-Input");
 
   let title = document.querySelector("h1");
   title.innerText = `Welcome ${firstname.value} ${lastname.value}`;
 
 
   let content = document.querySelector("#form-container");
-  content.innerHTML = `Please confirm that your firstname is ${firstname.value}. your lastname is ${lastname.value}. Your birthday is ${birthdate.value}. your password is ${password} And your email is ${email} Are your details correct? `;
+  content.innerHTML = `Please confirm that your firstname is ${firstname.value}. your lastname is ${lastname.value}. Your birthday is ${birthdate.value}. your password is ${password.value} And your email is ${email.value} Are your details correct? `;
 
  
 
