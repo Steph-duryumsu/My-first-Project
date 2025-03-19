@@ -44,21 +44,20 @@ li{
 
 @media (max-width: 768px){
   .container{
-   
+    align-items: center;
+    justify-content: center;
   }
 
   .navbar{
-    padding-right: 50px;
+    align-items: baseline;
   }
 
   .register-button{
-    align-items: center;
-    justify-content: center;
+    
   }
 
   .text{
-    align-items: center;
-    justify-content: center;
+    
   }
 }
 
