@@ -2,15 +2,11 @@ body{
 background-color: navajowhite;
 }
 
-.navdiv{
+.navbar{
   display: flex;
   justify-content: space-between;
   font-family: arial;
   align-items: baseline;
-}
-
-.navbar{
-  padding: 15px , 15px;
 }
 
 .span{
@@ -46,6 +42,24 @@ li{
   margin: 100px;
 }
 
+@media (max-width: 768px){
+  .container{
+   align-items: center;
+   justify-content: center;
+  }
+
+  .navbar{
+    padding-right: 100px;
+  }
+
+  .register-button{
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 45px ;
+  }
+}
+
 img{
   height: 135px;
   width: 155px;
@@ -75,6 +89,7 @@ img{
   height: 50px;
   width: 200px;
   margin-left: 700px;
+  margin-top: 20px;
 }
 
 
